@@ -1,0 +1,29 @@
+:root{
+    /* ESPAÇAMENTOS */
+    --espaco-interno-botao: 8px;
+    --espaco-entre-elementos-do-botao: 8px;
+    --espaco-entre-elementos: 16px/8px;
+    --espacamento-interno-do-corpo: 16px;
+    --espacamento-título-do-cartao-recentes-e-seus-itens: 24px;
+
+    /* TAMANHOS */
+    --mobile: 360px;
+    --desktop: 1440px;
+    --conteudo-principal: 1120px;
+    --max-cartao-desktop: 256px;
+    --min-cartao: 320px;
+
+    /* CORES */
+    --corpo: #1D232A;
+    --cabecalho: #1D232A;
+    --cabecalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cartao: #2C343A;
+    --fonte: #FFFFFF;
+    --fonte-alternativa: #95999C;
+    --links: #0480DC;
+    --botao: #0480DC;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+
