@@ -1,0 +1,17 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--corpo);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cabecalho-mobile);
+    padding: var(--espaco-entre-elementos);
+    box-shadow: var(--sombras);
+}
