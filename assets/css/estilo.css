@@ -37,7 +37,17 @@ body{
     background-color: var(--cabecalho-mobile);
     width: 75vw;
     height: 100vh;
+
+    position: absolute;
+    left: -100vw;
+    transition: 0.25s;
 }
+
+.menu-lateral--ativo{
+    left: 0;
+    transition: 0.25s;
+}
+
 .menu-lateral .menu-lateral__logo{
     /* Alinhando apenas a imagem no centro */
     align-self: center;
@@ -59,6 +69,11 @@ body{
     font-size: 24px;
     position: absolute;
     left: 24px;
+}
+.menu-lateral__link--ativo{
+    color: var(--branco);
+    padding-left: 56px;
+    border-left: 8px solid var(--branco);
 }
 
 .menu-lateral__link--inicio::before{
