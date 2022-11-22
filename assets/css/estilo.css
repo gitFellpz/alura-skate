@@ -1,17 +1,81 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
 html{
     font-size: 62.5%;
 }
 body{
     background-color: var(--corpo);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans' , 'icones', sans-serif;
     color: white;
 }
 
 .cabecalho{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--cabecalho-mobile);
     padding: var(--espaco-entre-elementos);
     box-shadow: var(--sombras);
+}
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: var(--tamanho-icones);
+}
+.cabecalho__notificacao i::before{
+    content: "\e906";
+    font-size: var(--tamanho-icones);
+}
+.cabecalho__logo{
+    width: 40px;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cabecalho-mobile);
+    width: 75vw;
+    height: 100vh;
+}
+.menu-lateral .menu-lateral__logo{
+    /* Alinhando apenas a imagem no centro */
+    align-self: center;
+    width: 118px;
+    padding: 16px;
+}
+
+.menu-lateral__link{
+    height: 64px;
+    color: var(--fonte-alternativa);
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+.menu-lateral__link::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu-lateral__link--inicio::before{
+    content: "\e902";
+}
+.menu-lateral__link--videos::before{
+    content: "\e90e";
+}
+.menu-lateral__link--picos::before{
+    content: "\e909";
+}
+.menu-lateral__link--integrantes::before{
+    content: "\e903";
+}
+.menu-lateral__link--camisas::before{
+    content: "\e900";
+}
+.menu-lateral__link--pinturas::before{
+    content: "\e90a";
 }
